@@ -197,3 +197,41 @@ button>.btn-texto{
   gap: 48px;
   padding: 48px;
 }
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color:var(--c-chocolate-blanco);
+  font-size: smaller;
+  font-family: var(--t-text);
+  /* width: 100vw; */
+  background: linear-gradient(-80deg, #573428, #180808);
+  padding-top: 16px;
+}
+
+footer img.brand{
+  width: 64px;
+}
+
+footer ul li:first-child{
+  transform: translateX(-32px);
+  list-style-type: none;
+}
+
+footer .socials{
+  display: flex;
+  gap: 16px;
+}
+
+footer .socials img{
+  width: 24px;
+}
+
+
+footer div.vertical{
+  width: 2px;
+  background-color: var(--c-chocolate-blanco);
+  height: 80%;
+}
