@@ -5,6 +5,7 @@
   --c-dulce-leche: #573428;
   --c-chocolate-leche: #6F4C41;
   --c-vainilla: #F8A655;
+  --c-vainilla-light: #F8A65555;
   --c-chocolate-blanco: #EEE3C6;
   --t-text: "Red Hat Display", sans-serif;
   --t-h1: "Satisfy", cursive;
@@ -19,7 +20,7 @@
 body{
   display: flex;
   flex-direction: column;
-
+  background: linear-gradient(80deg, #573428, #180808);
 }
 
 header{
@@ -33,9 +34,9 @@ header{
   align-items: center;
 }
 
-.logged{
+/* .logged{
   
-}
+} */
 
 .unlogged{
   display: none;
@@ -73,7 +74,7 @@ button.my-btn{
 
 button.fill{
   background-color: var(--c-chocolate-blanco);
-  border-color: var(--c-vainilla);
+  border-color: var(--c-chocolate-negro);
   color: var(--c-chocolate-negro);
 }
 
@@ -91,13 +92,14 @@ button>svg{
 button>.btn-texto{
   display: inline-block;
   vertical-align: middle;
+  font-family: var(--t-text);
+  font-weight: 700;
 }
 
 .welcome{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  background: linear-gradient(80deg, #573428, #180808);
   color:var(--c-chocolate-blanco);
   padding: 48px;
 }
@@ -125,4 +127,73 @@ button>.btn-texto{
 .welcome>.text-n-buttons>h1{
   font-family: var(--t-h1);
   font-size: 35px;
+}
+
+.my-card svg{
+  color:#573428;
+  width: 32px;
+}
+
+.my-card svg.transparent{
+  opacity: 0.5;
+}
+
+.my-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 350px;
+  box-shadow: var(--c-vainilla-light) 4px 4px 10px;
+  background-color: var(--c-chocolate-blanco);
+}
+
+.my-card hr{
+  border:var(--c-dulce-leche) 2px solid;
+  width: 80%;
+  opacity: 1;
+}
+
+.my-card .my-card-body{
+  display: flex;
+  flex-direction: column;
+  padding: 28px 28px 0 28px;
+}
+
+.my-card .precio-cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-card h3{
+  font-family: var(--t-text);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.my-card h2{
+  font-family: var(--t-text);
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.my-card .my-card-footer{
+  font-family: var(--t-text);
+  font-weight: 400;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 28px 28px 28px;
+  align-items: center;
+}
+
+.best-products{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding: 48px;
 }
