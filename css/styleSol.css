@@ -4,12 +4,12 @@
   object-fit: cover;
   font-weight: 100%;
 }
-.videoDeProductos {
-  width : auto;
-  height: 10%;
-  object-fit: cover;
-  font-weight: 25%;
+
   
     
 
+
+.seccionProductos{
+    background-color: #EEE3C6;
 }
+
