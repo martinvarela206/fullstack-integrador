@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
 
 :root{
   --c-chocolate-negro: #180808;
@@ -6,7 +6,8 @@
   --c-chocolate-leche: #6F4C41;
   --c-vainilla: #F8A655;
   --c-chocolate-blanco: #EEE3C6;
-  --t-boton: "Red Hat Display", sans-serif;
+  --t-text: "Red Hat Display", sans-serif;
+  --t-h1: "Satisfy", cursive;
 }
 
 *{
@@ -42,7 +43,7 @@ nav{
 
 nav>a{
   padding-bottom: 8px;
-  font-family: var(--t-boton);
+  font-family: var(--t-text);
 }
 
 nav>a,nav>a:visited{
@@ -84,4 +85,36 @@ button>svg{
 button>.btn-texto{
   display: inline-block;
   vertical-align: middle;
+}
+
+.welcome{
+  display:flex;
+  justify-items: space-between;
+  background: linear-gradient(80deg, #573428, #180808);
+  color:var(--c-chocolate-blanco);
+  gap: 48px;
+  padding: 48px;
+}
+
+.welcome>.decoration>img{
+  width:400px;
+}
+
+.welcome>.text-n-buttons{
+  display:flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  max-width: 400px;
+}
+
+.welcome>.text-n-buttons>p{
+  text-align: center;
+  font-family: var(--t-text);
+  font-size: 18px;
+}
+
+.welcome>.text-n-buttons>h1{
+  font-family: var(--t-h1);
+  font-size: 35px;
 }
