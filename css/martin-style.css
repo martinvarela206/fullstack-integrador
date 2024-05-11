@@ -63,13 +63,30 @@ nav>a.active{
   border-bottom: var(--c-vainilla) 2px solid;
 }
 
+nav>a:hover{
+  color: var(--c-vainilla-light);
+  border-bottom: var(--c-vainilla-light) 2px solid;
+}
+
 button.my-btn{
   width: fit-content;
-  background-color: #180808;
-  border: 2px solid #573428;
-  padding: 8px 16px;
+  background-color: var(--c-chocolate-negro);
+  border: 2px solid var(--c-dulce-leche);
+  padding: 8px 24px;
   border-radius: 50px;
   align-items: baseline;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.my-btn:hover.hollow, button.my-btn:hover.fill{
+  background-color: var(--c-chocolate-leche);
+  transition: 0.3s;
+}
+
+button.my-btn:hover.fill{
+  color: var(--c-vainilla);
+  transition: 0.3s;
 }
 
 button.fill{
@@ -93,7 +110,6 @@ button>.btn-texto{
   display: inline-block;
   vertical-align: middle;
   font-family: var(--t-text);
-  font-weight: 700;
 }
 
 .welcome{
@@ -113,7 +129,7 @@ button>.btn-texto{
 .welcome>.text-n-buttons{
   display:flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   align-items: center;
   max-width: 400px;
 }
@@ -203,11 +219,11 @@ footer{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  color:var(--c-chocolate-blanco);
+  color: var(--c-chocolate-leche);
   font-size: smaller;
   font-family: var(--t-text);
   /* width: 100vw; */
-  background: linear-gradient(-80deg, #573428, #180808);
+  background: linear-gradient(80deg, var(--c-chocolate-negro), #000000);
   padding-top: 16px;
 }
 
@@ -232,6 +248,6 @@ footer .socials img{
 
 footer div.vertical{
   width: 2px;
-  background-color: var(--c-chocolate-blanco);
-  height: 80%;
+  background-color: var(--c-dulce-leche);
+  height: 80px;
 }
