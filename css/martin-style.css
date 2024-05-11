@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --c-chocolate-negro: #180808;
+  --c-dulce-leche: #573428;
+  --c-chocolate-leche: #6F4C41;
+  --c-vainilla: #F8A655;
+  --c-chocolate-blanco: #EEE3C6;
+  --t-boton: "Red Hat Display", sans-serif;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-image: url(../assets/background-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logged{
+  
+}
+
+.unlogged{
+  display: none;
+}
+
+nav{
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+nav>a{
+  padding-bottom: 8px;
+  font-family: var(--t-boton);
+}
+
+nav>a,nav>a:visited{
+  color:var(--c-chocolate-blanco);
+  text-decoration: none;
+}
+
+nav>a.active{
+  color: var(--c-vainilla);
+  border-bottom: var(--c-vainilla) 2px solid;
+}
+
+button{
+  width: fit-content;
+  background-color: #180808;
+  border: 2px solid #573428;
+  padding: 8px 16px;
+  border-radius: 50px;
+  align-items: baseline;
+}
+
+button.fill{
+  background-color: var(--c-chocolate-blanco);
+  border-color: var(--c-vainilla);
+  color: var(--c-chocolate-negro);
+}
+
+button.hollow{
+  background-color: var(--c-chocolate-negro);
+  border-color: var(--c-vainilla);
+  color: var(--c-vainilla);
+}
+
+button>svg{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button>.btn-texto{
+  display: inline-block;
+  vertical-align: middle;
+}
