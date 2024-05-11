@@ -10,11 +10,11 @@
   --t-h1: "Satisfy", cursive;
 }
 
-*{
+/* *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body{
   display: flex;
@@ -62,7 +62,7 @@ nav>a.active{
   border-bottom: var(--c-vainilla) 2px solid;
 }
 
-button{
+button.my-btn{
   width: fit-content;
   background-color: #180808;
   border: 2px solid #573428;
@@ -105,7 +105,7 @@ button>.btn-texto{
 .welcome>.decoration>img{
   width:400px;
   padding-left: 20%;
-  transform: scale(150%) translateY(20%);
+  transform: scale(150%) translateY(20%) translateX(-5%);
 }
 
 .welcome>.text-n-buttons{
