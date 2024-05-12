@@ -9,6 +9,13 @@
   border-bottom: 10px;
 }
 
+.imgNosotros {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+  font-weight: 100%;
+  border-bottom: 10px;
+}
 
  
     
