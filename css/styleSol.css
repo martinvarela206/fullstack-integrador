@@ -1,0 +1,42 @@
+.seccionEntreProductos{
+    border-bottom: 300px;
+}
+.imgProductos {
+  width: 349px;
+  height: 397px;
+  object-fit: cover;
+  font-weight: 100%;
+  border-bottom: 10px;
+}
+
+ .videoDeProductos{
+    float: left;
+    padding: 10px;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 1200px; 
+    background-color: seagreen;
+    border-radius: 3rem;
+ } 
+    
+
+
+.seccionProductos{
+    background-color: #EEE3C6;
+    text-align: center;
+
+    
+}
+.entreProductos{
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+
+}
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
