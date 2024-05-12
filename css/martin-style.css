@@ -66,6 +66,7 @@ nav>a.active{
 nav>a:hover{
   color: var(--c-vainilla-light);
   border-bottom: var(--c-vainilla-light) 2px solid;
+  text-decoration: none;
 }
 
 button.my-btn{
@@ -250,4 +251,13 @@ footer div.vertical{
   width: 2px;
   background-color: var(--c-dulce-leche);
   height: 80px;
+}
+
+.video-container{
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  height: 80vh;
 }
