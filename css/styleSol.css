@@ -1,15 +1,15 @@
-.seccionEntreProductos{
-    border-bottom: 300px;
-}
+
+
+
 .imgProductos {
-  width: 248px;
-  height: 248px;
+  width: 148px;
+  height: 148px;
   object-fit: cover;
   font-weight: 100%;
   border-bottom: 10px;
 }
 
- 
+
  
     
 
@@ -17,6 +17,8 @@
 .seccionProductos{
     background-color: #EEE3C6;
     text-align: center;
+    margin:0;
+ 
 
     
 }
