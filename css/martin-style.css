@@ -253,11 +253,21 @@ footer div.vertical{
   height: 80px;
 }
 
-.video-container{
+.section-video{
   display: flex;
   justify-content: center;
 }
 
+.video-container{
+  overflow: hidden;
+  width: 1140px;
+  height: 480px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 video{
-  height: 80vh;
+  width:1140px;
 }
