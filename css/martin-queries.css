@@ -1,0 +1,65 @@
+@media screen and (max-width:1400px) {
+  .welcome{
+    justify-content: space-around;
+  }
+  
+  .welcome .decoration img{
+    width:250px;
+    padding-left: 20%;
+    transform: scale(150%) translateY(20%) translateX(-5%);
+  }
+
+  .best-products{
+    justify-content: center;
+    gap: 32px;
+  }
+
+  #carousel-brand{
+    width:250px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .welcome>div:nth-child(3){
+    display: none;
+  }
+
+  .welcome .welcome-buttons{
+    display: flex;
+  }
+
+  #carousel-brand{
+    width:150px;
+  }
+
+  /*Responsive del header*/
+  header>img{
+    display:none;
+  }
+
+  header .btn-texto{
+    display:none;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .welcome div:nth-child(1){
+    display: none;
+  }
+
+  nav{
+    gap:16px;
+    padding: 16px 8px;
+  }
+}
+
+@media screen and (max-width:580px){
+  /*Solucionar el footer*/
+  footer{
+    flex-direction: column;
+  }
+
+  footer .vertical{
+    display: none;
+  }
+}

@@ -34,6 +34,13 @@ header{
   align-items: center;
 }
 
+header .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
 /* .logged{
   
 } */
@@ -46,6 +53,7 @@ nav{
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav>a{
@@ -124,6 +132,14 @@ button>.btn-texto{
   width:400px;
   padding-left: 20%;
   transform: scale(150%) translateY(20%) translateX(-5%);
+}
+
+.welcome .welcome-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  max-width: 400px;
 }
 
 .welcome>.text-n-buttons{
@@ -218,6 +234,7 @@ button>.btn-texto{
 footer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   color: var(--c-chocolate-leche);
