@@ -11,12 +11,15 @@
 
 .imgNosotros {
   width: 250px;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   font-weight: 100%;
   border-bottom: 10px;
 }
+.fotosWeSeccion{
+  max-width: 1140px
 
+}
  
     
 
@@ -52,9 +55,13 @@
   text-align: center;
   color: #573428
 }
-.nombreFotoWe {
-  font-family:"Poetsen One", sans-serif;
-  font-size: 18px;
-  text-align: center;
-  color: #EEE3C6
+.tituloFotoWe {
+  font-family: var(--t-h1);
+  color:var(--c-chocolate-blanco);
+  font-weight: 425;
+}
+.textoFotoWe{
+  font-family: var(--t-text);
+  color:var(--c-chocolate-blanco);
+  font-weight: 425;
 }
