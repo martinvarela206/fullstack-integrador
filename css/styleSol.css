@@ -9,15 +9,9 @@
   border-bottom: 10px;
 }
 
-.imgNosotros {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  font-weight: 100%;
-  border-bottom: 10px;
-}
+
 .fotosWeSeccion{
-  max-width: 1140px;
+ max-width: 1140px;
  align-self: center;
 
 }
@@ -56,24 +50,43 @@
   text-align: center;
   color: #573428
 }
-.nombreFotoWe{
-  align-content: center;
-}
+
 .tituloFotoWe {
   font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
-  font-weight: 425;
+  font-weight: 490;
   align-self: center;
   text-align: center;
 }
 .textoFotoWe{
   font-family: var(--t-text);
   color:var(--c-chocolate-blanco);
-  font-weight: 425;
+  font-weight: 490;
   align-self: center;
   text-align: center;
 }
-figcaption{
-  text-align: center;
-  text-decoration: none;
+@media (max-width: 320px) {
+video {
+  max-width:320px;
+}
+}
+@media (max-width: 375px) {
+video {
+  max-width:375px;
+}
+}
+@media (max-width: 425px) {
+video {
+  max-width:425px;
+}
+}
+@media (max-width: 768px) {
+video {
+  max-width:768px;
+}
+}
+@media (max-width: 1250px) {
+video{
+  max-width: 1250px;
+}
 }
