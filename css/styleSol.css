@@ -17,7 +17,8 @@
   border-bottom: 10px;
 }
 .fotosWeSeccion{
-  max-width: 1140px
+  max-width: 1140px;
+ align-self: center;
 
 }
  
@@ -55,13 +56,18 @@
   text-align: center;
   color: #573428
 }
+.nombreFotoWe{
+  align-content: center;
+}
 .tituloFotoWe {
   font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
   font-weight: 425;
+  align-self: center;
 }
 .textoFotoWe{
   font-family: var(--t-text);
   color:var(--c-chocolate-blanco);
   font-weight: 425;
+  align-self: center;
 }
