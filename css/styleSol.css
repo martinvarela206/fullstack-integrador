@@ -64,10 +64,16 @@
   color:var(--c-chocolate-blanco);
   font-weight: 425;
   align-self: center;
+  text-align: center;
 }
 .textoFotoWe{
   font-family: var(--t-text);
   color:var(--c-chocolate-blanco);
   font-weight: 425;
   align-self: center;
+  text-align: center;
+}
+figcaption{
+  text-align: center;
+  text-decoration: none;
 }
