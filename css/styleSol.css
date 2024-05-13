@@ -66,9 +66,7 @@
   text-align: center;
 }
 @media (max-width: 320px) {
-  body{
-    max-width: 320px;
-  }
+ 
 
   .section-video {
   max-width: 320px;
@@ -77,9 +75,7 @@
 
 
 
-h1{
-  max-width: 320px;
-}
+
 
 .fotosWeSeccion {
   max-width: 320px;
@@ -99,9 +95,7 @@ h1{
 }
 
 
-h1{
-  max-width: 375px;
-}
+
 
 
 }
@@ -118,9 +112,7 @@ h1{
 }
 
 
-h1{
-  max-width: 425px;
-}
+
 
 
 }
@@ -137,9 +129,7 @@ h1{
 }
 
 
-h1{
-  max-width: 768px;
-}
+
 }
 @media (max-width: 1024px) {
 
