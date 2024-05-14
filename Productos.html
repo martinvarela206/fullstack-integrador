@@ -1,112 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./img/Petite icono.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/Petite icono.png" type="image/x-icon">
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/styleSol.css">
   <link rel="stylesheet" href="css/martin-style.css">
-  
-
+  <link rel="stylesheet" href="css/martin-queries.css">
 </head>
+
 <body>
-   
-  <div class="container">
-    <header>
-      <img src="assets/Marca Light.svg" alt="" width="100">
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a class="active" href="Productos.html">Productos</a>
-        <a href="Nosotros.html">Nosotros</a>
-        <a href="">Contacto</a>
-      </nav>
-      <div class="buttons">
-        <button class="my-btn unlogged hollow">Iniciar sesión</button>
-        <button class="my-btn logged hollow">Usuario</button>
-        <button class="my-btn logged hollow">Carrito</button>
-        <button class="my-btn fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  <header>
+    <img src="assets/Marca Light.svg" alt="" width="100">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a class="active" href="Productos.html">Productos</a>
+      <a href="Nosotros.html">Nosotros</a>
+      <a href="">Contacto</a>
+    </nav>
+    <div class="buttons">
+      <button class="my-btn unlogged hollow">Iniciar sesión</button>
+      <button class="my-btn logged hollow">Usuario</button>
+      <button class="my-btn logged hollow">Carrito</button>
+      <button class="my-btn fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
         </svg><span class="btn-texto">123 45-6789</span></button>
-      </div>
-    </header>
-   
-    
+    </div>
+  </header>
+  <div class="container">
     <div class="seccionProductos">
       <div class="row">
-      
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Chocotorta Instagram.jpg" class="img-thumbnail" alt="Chocotorta"   ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/selva negra.jpeg.jpg" class="img-thumbnail" alt="Selva Negra" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Torta Oreo.png" class="img-thumbnail" alt=">Torta Oreo" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Perdición de Dulce de leche y chocolate.png" class="img-thumbnail" alt="Perdición de Dulce de Leche y chocolate"  ></div>
 
-</div>
-<div class="entreProductos"></div>
+        <div class="col-sm-3" class="contenedor"><img class="imgProductos" src="./img/Chocotorta Instagram.jpg"
+            class="img-thumbnail" alt="Chocotorta" href="">
+          <figcaption class="nombreFotoProd">
+            Chocotorta
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/selva negra.jpeg.jpg" class="img-thumbnail"
+            alt="Selva Negra">
+          <figcaption class="nombreFotoProd">
+            Selva Negra
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Torta Oreo.png" class="img-thumbnail"
+            alt="Torta Oreo">
+          <figcaption class="nombreFotoProd">
+            Torta Oreo
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Perdición de Dulce de leche y chocolate.png"
+            class="img-thumbnail" alt="Perdición de Dulce de Leche y chocolate">
+          <figcaption class="nombreFotoProd">
+            Dulce Perdición Chocolate
+          </figcaption>
+        </div>
 
-<div class="row">
-  <div class="col-sm-3"><img class="imgProductos" src="../img/Torta de Fruta Instagram.jpg" class="img-thumbnail" alt="Torta de Frutas"  ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Cheese Cake.jpg" class="img-thumbnail" alt="Cheese Cake"  ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Perdición de Cereza.png" class="img-thumbnail" alt="Perdición de Cereza" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Pirámide Deliciosa.jpg" class="img-thumbnail" alt="Prámide Deliciosa" ></div>
-</div>
-<div class="entreProductos"></div>
-<div class="row">
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Budín Inglés.jpg" class="img-thumbnail" alt="Budín Inglés" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Individuales Instagram.jpg" class="img-thumbnail" alt="Chocotorta" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/Wafle Instagram.png" class="img-thumbnail" alt="Wafle" ></div>
-  <div class="col-sm-3"><img class="imgProductos" src="./img/mini rogel.jpeg.jpg" class="img-thumbnail" alt="Mini Rogel" ></div>
-</div>
+      </div>
 
-<div class="entreProductos" >
- 
-  <h1 class="animate__animated animate__bounce" >Consultanos por más opciones</h1>
-  
-   <style>
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-</style>
-<h1 class= "poetsen-one-regular">Te esperamos siempre</h1>
-</div>
-</div>
+      <div class="entreProductos"></div>
 
-    
-<footer>
-  <section>
-    <p>Terminos y Condiciones</p>
-    <p>Copyright 1985-2024 SweetBite S.A.</p>
-    <p>Av. Cordoba 876 Oeste, Capital, San Juan</p>
-    <p>Teléfono 123 45-678</p>
-  </section>
-  <div class="vertical"></div>
-  <section>
-    <ul>
-      <li>Mapa del sitio</li>
-      <li>Inicio</li>
-      <li>Productos</li>
-      <li>Nosotros</li>
-      <li>Contacto</li>
-    </ul>
-  </section>
-  <div class="vertical"></div>
-  <section>
-    <p>Redes Sociales:</p>
-    <span class="socials">
-      <img src="assets/Whatsapp.svg" alt="">
-      <img src="assets/Instagram.svg" alt="">
-      <img src="assets/Linkedin.svg" alt="">
-      <img src="assets/Facebook.svg" alt="">
-    </span>
-  </section>
-  <div class="vertical"></div>
-  <img class="brand" src="assets/Marca Light.svg" alt="">
-</footer>
+      <div class="row">
+        <div class="col-sm-3"><img class="imgProductos" src="../img/Torta de Fruta Instagram.jpg" class="img-thumbnail"
+            alt="Torta de Frutas">
+          <figcaption class="nombreFotoProd">
+            Selva Frutal
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Cheese Cake.jpg" class="img-thumbnail"
+            alt="Cheese Cake">
+          <figcaption class="nombreFotoProd">
+            Cheese Cake
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Perdición de Cereza.png" class="img-thumbnail"
+            alt="Perdición de Cereza">
+          <figcaption class="nombreFotoProd">
+            Perdición Cereza
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Pirámide Deliciosa.jpg" class="img-thumbnail"
+            alt="Prámide Deliciosa">
+          <figcaption class="nombreFotoProd">
+            Deliciosa Pirámide
+          </figcaption>
+        </div>
+      </div>
+      <div class="entreProductos"></div>
+      <div class="row">
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Budín Inglés.jpg" class="img-thumbnail"
+            alt="Budín Inglés">
+          <figcaption class="nombreFotoProd">
+            Budín Inglés
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Individuales Instagram.jpg" class="img-thumbnail"
+            alt="Tortas Individuales">
+          <figcaption class="nombreFotoProd">
+            Individuales
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/Wafle Instagram.png" class="img-thumbnail"
+            alt="Wafle">
+          <figcaption class="nombreFotoProd">
+            Wafle
+          </figcaption>
+        </div>
+        <div class="col-sm-3"><img class="imgProductos" src="./img/mini rogel.jpeg.jpg" class="img-thumbnail"
+            alt="Mini Rogel">
+          <figcaption class="nombreFotoProd">
+            Mini Rogel
+          </figcaption>
+        </div>
+      </div>
+
+      <div class="entreProductos">
+        <h1 class="animate__animated animate__bounce nombreFotoProd">Consultanos por más opciones</h1>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        </style>
+        <h1 class="poetsen-one-regular">Te esperamos siempre</h1>
+      </div>
+    </div>
+
+
+    <footer>
+      <section>
+        <p>Términos y Condiciones</p>
+        <p>Copyright 1985-2024 SweetBite S.A.</p>
+        <p>Av. Cordoba 876 Oeste, Capital, San Juan</p>
+        <p>Teléfono 123 45-678</p>
+      </section>
+      <div class="vertical"></div>
+      <section>
+        <ul>
+          <li>Mapa del sitio</li>
+          <li>Inicio</li>
+          <li>Productos</li>
+          <li>Nosotros</li>
+          <li>Contacto</li>
+        </ul>
+      </section>
+      <div class="vertical"></div>
+      <section>
+        <p>Redes Sociales:</p>
+        <span class="socials">
+          <img src="assets/Whatsapp.svg" alt="">
+          <img src="assets/Instagram.svg" alt="">
+          <img src="assets/Linkedin.svg" alt="">
+          <img src="assets/Facebook.svg" alt="">
+        </span>
+      </section>
+      <div class="vertical"></div>
+      <img class="brand" src="assets/Marca Light.svg" alt="">
+    </footer>
   </div>
   </div>
 </body>
+
 </html>

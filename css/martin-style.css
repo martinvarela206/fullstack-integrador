@@ -34,6 +34,13 @@ header{
   align-items: center;
 }
 
+header .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
 /* .logged{
   
 } */
@@ -46,6 +53,7 @@ nav{
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav>a{
@@ -80,6 +88,10 @@ button.my-btn{
   transition: background-color 0.3s, color 0.3s;
 }
 
+button.my-btn>svg{
+  width:20px;
+}
+
 button.my-btn:hover.hollow, button.my-btn:hover.fill{
   background-color: var(--c-chocolate-leche);
   transition: 0.3s;
@@ -102,11 +114,6 @@ button.hollow{
   color: var(--c-vainilla);
 }
 
-button>svg{
-  display: inline-block;
-  vertical-align: middle;
-}
-
 button>.btn-texto{
   display: inline-block;
   vertical-align: middle;
@@ -125,6 +132,14 @@ button>.btn-texto{
   width:400px;
   padding-left: 20%;
   transform: scale(150%) translateY(20%) translateX(-5%);
+}
+
+.welcome .welcome-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  max-width: 400px;
 }
 
 .welcome>.text-n-buttons{
@@ -146,9 +161,9 @@ button>.btn-texto{
   font-size: 35px;
 }
 
-.my-card svg{
+.my-card svg.bi-star-fill{
   color:#573428;
-  width: 32px;
+  width: 16px;
 }
 
 .my-card svg.transparent{
@@ -159,15 +174,16 @@ button>.btn-texto{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
-  max-width: 350px;
+  max-width: 300px;
   box-shadow: var(--c-vainilla-light) 4px 4px 10px;
   background-color: var(--c-chocolate-blanco);
+  color:var(--c-chocolate-negro)
 }
 
 .my-card hr{
-  border:var(--c-dulce-leche) 2px solid;
+  border:var(--c-dulce-leche) 1px solid;
   width: 80%;
   opacity: 1;
 }
@@ -175,7 +191,7 @@ button>.btn-texto{
 .my-card .my-card-body{
   display: flex;
   flex-direction: column;
-  padding: 28px 28px 0 28px;
+  padding: 24px 24px 0 24px;
 }
 
 .my-card .precio-cart{
@@ -187,13 +203,13 @@ button>.btn-texto{
 .my-card h3{
   font-family: var(--t-text);
   font-weight: 900;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .my-card h2{
   font-family: var(--t-text);
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .my-card .my-card-footer{
@@ -211,13 +227,14 @@ button>.btn-texto{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  gap: 48px;
-  padding: 48px;
+  justify-content: space-between;
+  padding: 32px 0;
 }
 
 footer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   color: var(--c-chocolate-leche);
@@ -255,7 +272,16 @@ footer div.vertical{
 
 .section-video{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.section-video h1{
+  font-family: var(--t-h1);
+  color:var(--c-chocolate-blanco);
+  font-weight: 400;
+
 }
 
 .video-container{

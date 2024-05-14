@@ -10,6 +10,11 @@
 }
 
 
+.fotosWeSeccion{
+ max-width: 1140px;
+ align-self: center;
+
+}
  
     
 
@@ -28,9 +33,60 @@
 
 
 }
+
+.entreProductos > h1{
+    font-size: 2rem;
+    color: #573428
+
+
+}
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+.nombreFotoProd {
+  font-family:"Poetsen One", sans-serif;
+  text-align: center;
+  color: #573428
+}
 
+.tituloFotoWe {
+  font-family: var(--t-h1);
+  color:var(--c-chocolate-blanco);
+  font-weight: 490;
+  align-self: center;
+  text-align: center;
+}
+.textoFotoWe{
+  font-family: var(--t-text);
+  color:var(--c-chocolate-blanco);
+  font-weight: 490;
+  align-self: center;
+  text-align: center;
+}
+@media (max-width: 320px) {
+video {
+  max-width:320px;
+}
+}
+@media (max-width: 375px) {
+video {
+  max-width:375px;
+}
+}
+@media (max-width: 425px) {
+video {
+  max-width:425px;
+}
+}
+@media (max-width: 768px) {
+video {
+  max-width:768px;
+}
+}
+@media (max-width: 1250px) {
+video{
+  max-width: 1250px;
+}
+}
