@@ -65,58 +65,19 @@
   align-self: center;
   text-align: center;
 }
-
-@media (max-width 320px) {
-  
-
-
-        .section-video {
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .video-container {
+ .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
+             padding-bottom: 56.25%; 
             height: 0;
             overflow: hidden;
             max-width: 100%;
-            overflow: hidden;
-  width: 320px;
-  height: 320px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-            
+           
         }
 
-        .video-container video {
+.video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-      
-       
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-      }
-        
-      @media (max-width 1024px){
-      .video-container{
-  overflow: hidden;
-  width: 1140px;
-  height: 480px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-      }
