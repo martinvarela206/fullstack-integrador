@@ -10,7 +10,7 @@
 }
 
 .item{
-    width: 100px;
+    width: auto;
     height: auto;
     color: var(--c-chocolate-negro);
     font-size: 2em;
