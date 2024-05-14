@@ -66,27 +66,140 @@
   text-align: center;
 }
 @media (max-width: 320px) {
-video {
-  max-width:320px;
+ 
+
+  .section-video {
+  max-width: 320px;
+ 
 }
+
+
+
+
+
+.fotosWeSeccion {
+  max-width: 320px;
+}
+
 }
 @media (max-width: 375px) {
-video {
-  max-width:375px;
+
+  .section-video {
+  max-width: 375px;
+
+ 
 }
+.videoNosotros{
+  max-width: 375px;
+  max-height: 375px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 425px) {
+
+  .section-video {
+  max-width: 425px;
+ 
+}
+.videoNosotros{
+  max-width: 425px;
+  max-height: 425px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .section-video {
+  max-width: 768px;
+ 
+}
+.videoNosotros{
+  max-width: 768px;
+  max-height: 768px;
+}
+
+
+
+}
+@media (max-width: 1024px) {
+
+  .section-video {
+  max-width: 1024px;
+ 
+}
+video{
+  max-width: 1024px;
+  max-height: 1024px;
+}
+
+
+h1{
+  max-width: 1024px;
+}
+
+}
+/* @media (max-width: 375px) {
+.section-video{
+  max-width:375px;
+  
+}
+h1{
+  max-width: 375px;
+}
+video{
+  max-width: 375px;
+  max-height: 375px;
+}
+
+
 }
 @media (max-width: 425px) {
-video {
+.section-video{
   max-width:425px;
+  
+}
+h1{
+  max-width: 425px;
+}
+video{
+  max-width: 425px;
+  max-height: 425px;
 }
 }
 @media (max-width: 768px) {
-video {
+.section-video{
   max-width:768px;
+  
+}
+h1{
+  max-width: 768px;
+}
+video{
+  max-width: 768px;
+  max-height: 768px;
 }
 }
 @media (max-width: 1250px) {
-video{
+
+  .section-video{
+  max-width:1250px;
+  
+}
+h1{
   max-width: 1250px;
 }
+video{
+  max-width: 1250px;
+  max-height: 1250px;
 }
+} */
