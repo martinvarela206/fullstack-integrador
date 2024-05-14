@@ -65,141 +65,58 @@
   align-self: center;
   text-align: center;
 }
-@media (max-width: 320px) {
- 
 
-  .section-video {
-  max-width: 320px;
- 
-}
-
-
-
-
-
-.fotosWeSeccion {
-  max-width: 320px;
-}
-
-}
-@media (max-width: 375px) {
-
-  .section-video {
-  max-width: 375px;
-
- 
-}
-.videoNosotros{
-  max-width: 375px;
-  max-height: 375px;
-}
-
-
-
-
-
-}
-
-@media (max-width: 425px) {
-
-  .section-video {
-  max-width: 425px;
- 
-}
-.videoNosotros{
-  max-width: 425px;
-  max-height: 425px;
-}
-
-
-
-
-
-}
-
-@media (max-width: 768px) {
-
-  .section-video {
-  max-width: 768px;
- 
-}
-.videoNosotros{
-  max-width: 768px;
-  max-height: 768px;
-}
-
-
-
-}
-@media (max-width: 1024px) {
-
-  .section-video {
-  max-width: 1024px;
- 
-}
-video{
-  max-width: 1024px;
-  max-height: 1024px;
-}
-
-
-h1{
-  max-width: 1024px;
-}
-
-}
-/* @media (max-width: 375px) {
-.section-video{
-  max-width:375px;
+@media (max-width 320px) {
   
-}
-h1{
-  max-width: 375px;
-}
-video{
-  max-width: 375px;
-  max-height: 375px;
-}
 
 
-}
-@media (max-width: 425px) {
-.section-video{
-  max-width:425px;
-  
-}
-h1{
-  max-width: 425px;
-}
-video{
-  max-width: 425px;
-  max-height: 425px;
-}
-}
-@media (max-width: 768px) {
-.section-video{
-  max-width:768px;
-  
-}
-h1{
-  max-width: 768px;
-}
-video{
-  max-width: 768px;
-  max-height: 768px;
-}
-}
-@media (max-width: 1250px) {
+        .section-video {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
 
-  .section-video{
-  max-width:1250px;
-  
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            overflow: hidden;
+  width: 320px;
+  height: 320px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+            
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      
+       
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+      }
+        
+      @media (max-width 1024px){
+      .video-container{
+  overflow: hidden;
+  width: 1140px;
+  height: 480px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1{
-  max-width: 1250px;
-}
-video{
-  max-width: 1250px;
-  max-height: 1250px;
-}
-} */
+      }
