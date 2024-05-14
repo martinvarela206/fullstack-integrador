@@ -15,6 +15,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/martin-style.css">
   <link rel="stylesheet" href="css/martin-queries.css">
+  <link rel="stylesheet" href="css/styleIvan.css">
+
 </head>
 
 <body>
@@ -37,11 +39,80 @@
         </svg><span class="btn-texto">123 45-6789</span></button>
     </div>
   </header>
-  <section>
-    <p>Terminos y Condiciones</p>
-    <p>Copyright 1985-2024 SweetBite S.A.</p>
-    <p>Av. Cordoba 876 Oeste, Capital, San Juan</p>
-    <p>Teléfono 123 45-678</p>
+
+  <section class="container">
+    <div class="item item1">PÁGINA DE CONTACTO</div>
+    <div class="item item2">
+      <img src="img/mapa_google.png" alt="Mapa de Google">
+    </div>
+    
+    <div class="item item3">
+      <!-- FORMULARIO -->
+      <form action="#" class="formulario" id="formulario">
+        <!-- GRUPO DE USUARIO -->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label class="formulario__label">Nombre de usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="daniel_salinas">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+        
+        <!-- GRUPO DE NOMBRE-->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label class="formulario__label">Nombre y Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Daniel Salinas">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+        </div>
+
+              <!-- GRUPO DE EMAIL -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label class="formulario__label">Correo Electonico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@daniel.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+        </div>
+
+
+        <!-- GRUPO DE TELÉFONO -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="0123456789">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El número debe tener 10 digitos</p>
+        </div>
+
+
+        <!-- GRUPO TERMINOS Y CONDICIONES -->
+        <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                <b class="formulario__span">Acepto los terminos y condiciones</b>
+            </label>
+        </div>
+        
+        <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+        </div>
+
+
+        <!-- GRUPO ENVIAR -->
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+            <input class="formulario__btn" type="submit" value="Enviar">
+        </div>
+      </form>
+    </div> 
   </section>
   <footer>
     <section>
