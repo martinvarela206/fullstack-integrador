@@ -19,6 +19,7 @@
     justify-content: left;
     background-color: var(--c-chocolate-blanco);
     padding: 20px;
+    margin: 20px;
 }
 
 .item1{
@@ -32,9 +33,12 @@
 .item2{
     width: 50%;
     
-
 }
 
+#map {
+    width: 625px;
+    height: 625px;
+}
 
 .item3{
     width: 50%;
