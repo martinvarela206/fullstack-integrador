@@ -50,10 +50,11 @@
   text-align: center;
   color: #573428
 }
+
 .titulazo{
 font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
-   font-weight: 900px;
+   font-weight: 1000px;
   text-align: center;
   margin-top: 1%;
 }
