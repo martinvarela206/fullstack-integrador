@@ -51,13 +51,13 @@
   color: #573428
 }
 .titulazo{
-  margin-left: 35%;
-  
-}
-.titleWe{
-  font-weight: 900;
+font-family: var(--t-h1);
+  color:var(--c-chocolate-blanco);
+   font-weight: 900px;
   text-align: center;
+  margin-top: 1%;
 }
+
 .tituloFotoWe {
   font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
@@ -89,13 +89,14 @@
 }
 
 .fotosIzquierda,
-.videoNosotrosMedio, 
+.videoNosotrosCostado, 
 .fotosDerecha {
     flex: 1;
     padding: 20px;
     max-width: 600px;
-    
-}
+   
+    }
+
 
 
 
@@ -106,16 +107,19 @@
     height: 300px;
     width: 300px;
 }
+.fotosIzquierda{
+  margin-left: 13%;
+}
 
 .fotosDerecha{
   margin-left: 13%;
 }
 
 
-.videoNosotrosMedio {
+.videoNosotrosCostado {
 position: relative;
 padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+padding-top: 30px;  overflow: hidden;
 }
 
 .videoNosotros {
