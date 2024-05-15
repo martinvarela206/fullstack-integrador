@@ -56,7 +56,8 @@ font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
    font-weight: 1000px;
   text-align: center;
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-bottom: 0;
 }
 
 .tituloFotoWe {
