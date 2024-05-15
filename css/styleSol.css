@@ -50,28 +50,40 @@
   text-align: center;
   color: #573428
 }
-
+.titulazo{
+  margin-left: 35%;
+  font-weight: ;
+}
+.titleWe{
+  font-weight: 900;
+  text-align: center;
+}
 .tituloFotoWe {
   font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
-  font-weight: 490;
+  
   align-self: center;
   text-align: center;
+  max-width: 300px;
 }
 .textoFotoWe{
-  font-family: var(--t-text);
-  color:var(--c-chocolate-blanco);
-  font-weight: 490;
   align-self: center;
   text-align: center;
+  font-family: var(--t-text);
+  color:var(--c-chocolate-blanco);
+  
+  
+  max-width: 300px;
 }
+  
+
 
         .contenedorNosotros {
     display: flex;
     padding: 20px;
-    height: 50%;
+    height: 100%;
     flex-wrap: wrap;
-    margin: 80px;
+    margin: 100px;
     
    
 }
@@ -82,7 +94,7 @@
     flex: 1;
     padding: 20px;
     max-width: 600px;
-
+    
 }
 
 
@@ -95,6 +107,9 @@
     width: 300px;
 }
 
+.fotosDerecha{
+  margin-left: 13%;
+}
 
 
 .videoNosotrosMedio {
@@ -106,7 +121,9 @@ padding-top: 30px; height: 0; overflow: hidden;
 .videoNosotros {
 position: absolute;
 top: 0;
-left: 0;
-max-width: 100%;
-height: 95%;
+left: 0; 
+margin-right: 300px;
+max-width: 600px;
+height: 100%;
+border-radius: 1.5px;
 }
