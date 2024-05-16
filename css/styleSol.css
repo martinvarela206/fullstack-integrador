@@ -98,7 +98,9 @@
 .fotosDerecha {
     flex: 1;
     padding: 20px;
+    width: 20%;
     max-width: 600px;
+    overflow: hidden;
    
     }
 
@@ -109,8 +111,10 @@
 .fotoIzquierda,
 .fotoDerecha{
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }
 .videoNosotrosCostado{
   margin-right: 15%;
