@@ -1,5 +1,5 @@
 .container {
-    max-width: 600px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
     background-color: var(--c-chocolate-blanco);
@@ -9,8 +9,31 @@ h1 {
     text-align: center;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    flex: 1;
+    max-width: 800px;
+}
+/* configuración de form */
+
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px 20px 20px 15px;
 }
 
 label {
@@ -64,18 +87,16 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
-h2{
-    text-align: center;
-}
+/* Estilos existentes para los campos del formulario */
 
-img {
-    display: block;
-    max-width: 500px;
-    margin: 20px auto 0;
-}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
+    .image-container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
