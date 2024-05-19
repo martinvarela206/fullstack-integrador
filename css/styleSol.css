@@ -1,6 +1,3 @@
-
-
-
 .imgProductos {
   width: 148px;
   height: 148px;
@@ -9,36 +6,24 @@
   border-bottom: 10px;
 }
 
-
-.fotosWeSeccion{
- max-width: 1140px;
- align-self: center;
-
-}
- 
-    
-
-
-.seccionProductos{
-    background-color: #EEE3C6;
-    text-align: center;
-    margin:0;
- 
-
-    
-}
-.entreProductos{
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-
+.fotosWeSeccion {
+  max-width: 1140px;
+  align-self: center;
 }
 
-.entreProductos > h1{
-    font-size: 2rem;
-    color: #573428
+.seccionProductos {
+  background-color: #eee3c6;
+  text-align: center;
+  margin: 0;
+}
+.entreProductos {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
-
+.entreProductos > h1 {
+  font-size: 2rem;
+  color: #573428;
 }
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
@@ -46,14 +31,11 @@
   font-style: normal;
 }
 
-
-
 .nombreFotoProd {
-  font-family:"Poetsen One", sans-serif;
+  font-family: "Poetsen One", sans-serif;
   text-align: center;
-  color: #573428
+  color: #573428;
 }
-
 
 .presentacionNosotros {
   text-align: center;
@@ -62,83 +44,72 @@
 }
 
 .nosostrosSomos {
-color: var(--c-chocolate-blanco);
-font-family: var(--t-h1);
+  color: var(--c-chocolate-blanco);
+  font-family: var(--t-h1);
 }
-.tituloSeccion{
-align-self: center;
+.tituloSeccion {
+  align-self: center;
   text-align: center;
   font-family: var(--t-text);
-  color:var(--c-chocolate-blanco);
+  color: var(--c-chocolate-blanco);
   align-self: center;
   text-decoration: underline;
-   }
-
+}
 
 .contenedorNosotros {
   display: flex;
   flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-evenly ;
-  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .fotosIzquierda,
-.fotosDerecha{
-    display: flex;
+.fotosDerecha {
+  display: flex;
   flex-direction: column;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .fotosIzquierda,
 .fotosDerecha,
-.videoNosotrosCostado
-{
-    width: 320px;
+.videoNosotrosCostado {
+  width: 320px;
 }
 
 .fotoVideo,
 .fotoDerecha,
-.fotoIzquierda{
-    
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    
-    width: 320px;
-    height: 320px;
-    
-    object-fit: cover;
-    
+.fotoIzquierda {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 
+  width: 320px;
+  height: 320px;
+
+  object-fit: cover;
 }
 
-.fotoVideo{
-
+.fotoVideo {
   opacity: 0.1;
-  background-color:#573428 ;
+  background-color: #573428;
 }
-.videoNosotros{
-    width: 100%;
-   
-    overflow: hidden;
-    
-}
+.videoNosotros {
+  width: 100%;
 
+  overflow: hidden;
+}
 
 .tituloFotoWe {
   font-family: var(--t-h1);
-  color:var(--c-chocolate-blanco);
-  
+  color: var(--c-chocolate-blanco);
+
   align-self: center;
   text-align: center;
-  
 }
 
-.textoFotoWe{
+.textoFotoWe {
   align-self: center;
   text-align: center;
   font-family: var(--t-text);
-  color:var(--c-chocolate-blanco);
-  
-  
+  color: var(--c-chocolate-blanco);
+
   max-width: 300px;
 }
