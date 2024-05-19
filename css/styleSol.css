@@ -99,11 +99,14 @@ align-self: center;
 .fotoVideo,
 .fotoDerecha,
 .fotoIzquierda{
-    height: 320px;
-    width: 320px;
+    
     border-radius: 50%;
-    overflow: hidden;
-    object-fit: fill;
+    aspect-ratio: 1 / 1;
+    
+    width: 320px;
+    height: 320px;
+    
+    object-fit: cover;
     
 
 }
