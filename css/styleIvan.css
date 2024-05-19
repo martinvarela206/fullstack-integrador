@@ -42,12 +42,12 @@ textarea {
     margin-bottom: 5px;
 }
 
-.radio-label {
+label {  /*.radio-label*/
     display: inline-block; /* Cambiar a inline-block */
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: var(--c-dulce-leche);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -55,13 +55,22 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: var(--c-chocolate-leche);
+}
+
+.button-container {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
 }
 
 img {
     display: block;
-    max-width: 200px;
+    max-width: 500px;
     margin: 20px auto 0;
 }
 
