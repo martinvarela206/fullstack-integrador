@@ -58,62 +58,57 @@
             </div>
             <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
         </div>
-
-        
-        <!-- GRUPO DE APELLIDO-->
-        <div class="formulario__grupo" id="grupo__nombre">
-            <label class="formulario__label">Apellidos</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Daniel Salinas">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <div class="form-group">
+            <label for="email">Email*:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Asunto*:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="general">General</option>
+                <option value="product">Producto</option>
+                <option value="support">Soporte</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>¿Cómo nos conociste?*</label>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="website" name="source" value="website" required>
+                    <label for="website" class="radio-label">Página web</label>
+                </div>
+                <div>
+                    <input type="radio" id="social" name="source" value="social">
+                    <label for="social" class="radio-label">Redes sociales</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="source" value="other">
+                    <label for="other" class="radio-label">Otro</label>
+                </div>
             </div>
-            <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
         </div>
-
-              <!-- GRUPO DE EMAIL -->
-        <div class="formulario__grupo" id="grupo__correo">
-            <label class="formulario__label">Email</label>
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@daniel.com">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+        <div class="form-group">
+          <label for="image">Tu pastel preferido:</label>
+          <input type="file" id="image" name="image" accept="image/*">
+      </div>
+        <div class="form-group">
+            <label for="message">Mensaje*:</label>
+            <textarea id="message" name="message" required></textarea>
         </div>
-
-
-        <!-- GRUPO DE TELÉFONO -->
-        <div class="formulario__grupo" id="grupo__telefono">
-            <label class="formulario__label">Tlf.</label>
-            <div class="formulario__grupo-input">
-                <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="0123456789">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El número debe tener 10 digitos</p>
+        <p>* Campo obligatorio</p>
+        <div class="form-group">
+          <div class="button-container">
+            <button type="submit">Enviar</button>
+          </div> 
         </div>
-
-
-        <!-- GRUPO BOLETIN INFORMATIVO -->
-        <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
-            <label class="formulario__label">
-                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                <b class="formulario__span">Quiero recibir el boletin informativo</b>
-            </label>
-        </div>
-        
-        <!-- MENSAJE DE CAMPOS REQUERIDOS -->
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
-        </div>
-
-
-        <!-- GRUPO ENVIAR -->
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
-            <input class="formulario__btn" type="submit" value="Enviar">
-        </div>
-      </form>
-    </div> 
-  </section>
+    </form>
+    <!-- <img src="img/Petite icono.png" alt="Logo"> -->
+    <h2>Nuestra ubicación en Buenos Aires</h2>
+    <img src="img/mapa_google.png" alt="mapa de google">
+  </div>
+  <script src="script.js"></script>
+  
   <footer>
     <section>
       <p>Terminos y Condiciones</p>

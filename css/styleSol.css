@@ -47,9 +47,7 @@
 }
 
 
-.welcome-we{
-  margin-left: 37%;
-}
+
 .nombreFotoProd {
   font-family:"Poetsen One", sans-serif;
   text-align: center;
@@ -57,19 +55,81 @@
 }
 
 
-.tituloSection,
+.presentacionNosotros {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nosostrosSomos {
+color: var(--c-chocolate-blanco);
+font-family: var(--t-h1);
+}
+.tituloSeccion{
+align-self: center;
+  text-align: center;
+  font-family: var(--t-text);
+  color:var(--c-chocolate-blanco);
+  align-self: center;
+  text-decoration: underline;
+   }
+
+
+.contenedorNosotros {
+  display: flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly ;
+  
+}
+.fotosIzquierda,
+.fotosDerecha{
+    display: flex;
+  flex-direction: column;
+ flex-wrap: wrap;
+}
+
+.fotosIzquierda,
+.fotosDerecha,
+.videoNosotrosCostado
+{
+    width: 320px;
+}
+
+.fotoVideo,
+.fotoDerecha,
+.fotoIzquierda{
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: fill;
+    
+
+}
+
+.fotoVideo{
+
+  opacity: 0.1;
+  background-color:#573428 ;
+}
+.videoNosotros{
+    width: 100%;
+   
+    overflow: hidden;
+    
+}
+
+
 .tituloFotoWe {
   font-family: var(--t-h1);
   color:var(--c-chocolate-blanco);
   
   align-self: center;
   text-align: center;
-  max-width: 300px;
+  
 }
-.tituloSeccion{
-  text-decoration-line: underline ;
-  text-decoration-color:var(--c-chocolate-blanco) ;
-}
+
 .textoFotoWe{
   align-self: center;
   text-align: center;
@@ -78,88 +138,4 @@
   
   
   max-width: 300px;
-}
-  
-
-
-        .contenedorNosotros {
-    display: flex;
-    padding: 20px;
-    height: 100%;
-    flex-wrap: wrap;
-
-   ;
-    
-   
-}
-
-.fotosIzquierda,
-.videoNosotrosCostado, 
-.fotosDerecha {
-    flex: 1;
-    padding: 20px;
-    max-width: 600px;
-   
-    }
-
-
-
-
-
-.fotoIzquierda,
-.fotoDerecha{
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-}
-.videoNosotrosCostado{
-  margin-right: 15%;
-}
-.fotosIzquierda{
-  margin-left:0%;
-  margin-right:5%
-}
-
-.fotosDerecha{
-  margin-left: 0%;
-}
-
-
-.videoNosotrosCostado {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;  overflow: hidden;
-margin-left: 0;
-}
-
-.videoNosotros {
-position: absolute;
- 
-margin-right: 300px;
-max-width: 600px;
-height: 100%;
-border-radius: 1.5px;
-}
-
-@media (max-width:320px){
-  .presentaciónNosotros,
-.videoNosotrosCostado,
-.fotosIzquierda,
-.fotosDerecha {
-  padding:0%;
-}
- .presentaciónNosotros,
- .welcome,
-.welcome-we
- {
-  padding:0%;
-  margin-left: 0%;
- }
- .videoNosotros{
-  position: left;
- }
- video{
-  margin-left: 0%;
- }
-
 }
