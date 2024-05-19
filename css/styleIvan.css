@@ -42,6 +42,10 @@ textarea {
     margin-bottom: 5px;
 }
 
+.radio-label {
+    display: inline-block; /* Cambiar a inline-block */
+}
+
 button[type="submit"] {
     background-color: #4CAF50;
     color: white;
