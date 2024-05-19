@@ -3,10 +3,13 @@
     margin: 0 auto;
     padding: 20px;
     background-color: var(--c-chocolate-blanco);
+    font-family: var(--t-text);
+    color: var(--c-chocolate-negro);
 }
 
-h1 {
-    text-align: center;
+h2 {
+    font-family: var(--t-h1);
+    font-size: 35px;
 }
 
 .content {
@@ -39,6 +42,9 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    font-family: var(--t-text);
+    color: var(--c-chocolate-negro);
+    font-size: 18px;
 }
 
 input[type="text"],
