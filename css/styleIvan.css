@@ -36,7 +36,7 @@ form {
 /* configuración de form */
 
 .form-group {
-    margin-bottom: 20px 20px 20px 15px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -46,6 +46,11 @@ label {
     color: var(--c-chocolate-negro);
     font-size: 18px;
 }
+
+.label-group {
+    font-weight: bold;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -76,7 +81,7 @@ label {  /*.radio-label*/
 }
 
 button[type="submit"] {
-    background-color: var(--c-dulce-leche);
+    background-color: var(--c-chocolate-negro);
     color: white;
     padding: 12px 20px;
     border: none;
