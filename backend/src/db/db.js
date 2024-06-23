@@ -17,6 +17,7 @@
 // module.exports = db;
 // module.exports = mysql;
 
+// 
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
@@ -28,16 +29,10 @@ const db = mysql.createConnection({
 
 db.connect((error) => {
   if (error) {
-    return console.log(error);
+    console.log(error);
+    return;
   }
   console.log("Conectados");
 });
 
-
-//export default db;
-// module.exports = {
-//   mysql,
-//   db,
 module.exports = db;
-//module.exports=exportdefault.connection
-// }
