@@ -5,10 +5,10 @@ const db = mysql.createConnection({
   // user: "root",
   // password: "",
   // database: "pasterie_integrador",
-  host: "mysql-solromaniuk86.alwaysdata.net",
-  user: "359679_pasterie",
-  password: "Comision24130",
-  database: "solromaniuk86_pasterie_integrador",
+  host: "mysql-solromaniuk86.alwaysdata.net", //o es https://phpmyadmin.alwaysdata.com/?
+  user: "359679_pasterie", // alwaysdata no me deja  poner root, y obliga a que el usuario inicie con esos números
+  password: "Comision24130",//alwaysdata no me deja  poner root
+  database: "solromaniuk86_pasterie_integrador",//alwaysdata obliga a que el usuario inicie con esos números
 
 });
 
