@@ -13,9 +13,9 @@
 //const db  = require("../db/db");
 //import  connection from "../db/db";
 //import  connection from "../db/db";
-import  db from "../db/db";
-const fs = require("fs");
-const path = require("path");
+import  mysql from "mysql2";
+import fs from "fs";
+import path from "path";
 export const todos_productos = (req, res) => {
   const sql = "SELECT * FROM productos";
   db.query(sql, (error, rows) => {
@@ -101,11 +101,11 @@ const destroy = (req, res) => {
     res.json({ mensaje: "Registro borrado" });
   });
 };
-module.exports = {
-  todos_productos,
-  un_producto,
-  store,
-  update,
-  destroy,
-};
+// module.exports = {
+//   todos_productos,
+//   un_producto,
+//   store,
+//   update,
+//   destroy,
+// };
 
