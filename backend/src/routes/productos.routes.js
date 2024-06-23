@@ -5,6 +5,7 @@ import {
 const routerProductos = Router();
 
 import {
+    destroy,
     store,
     todos_productos,
     un_producto,
@@ -16,5 +17,7 @@ routerProductos.get('/', todos_productos)
 routerProductos.get('/:id', un_producto)
 routerProductos.post('/', store)
 routerProductos.put('/:id', update)
+routerProductos.delete('/:id', destroy)
+
 
 export default routerProductos
