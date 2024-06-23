@@ -9,24 +9,41 @@
 //     res.json({
 //         id: `Producto id: ${id}`
 //     })
-// } 
+// }
 //const db  = require("../db/db");
 //import  connection from "../db/db";
 //import  connection from "../db/db";
-import  mysql from "mysql2";
+// import  mysql from "mysql2";
+// import fs from "fs";
+// import path from "path";
+// import connection from "../db/db";
+// export const todos_productos = (req, res) => {
+//   const sql = "SELECT * FROM productos";
+//   db.query(sql, (error, rows) => {
+//     if (error) {
+      
+//       console.log(error);
+//       return res.status(500).json({ error: "Intente más tarde" });
+//     }
+//     res.json(rows);
+//   });
+  
+// };
+import mysql from "mysql2";
 import fs from "fs";
 import path from "path";
+import db from "../db/db";
 export const todos_productos = (req, res) => {
-  const sql = "SELECT * FROM productos";
-  db.query(sql, (error, rows) => {
+  const sql = "SELECT * FROM productos"; db.query(sql, (error, rows) => {
     if (error) {
-      
-      console.log(error);
-      return res.status(500).json({ error: "Intente más tarde" });
-    }
-    res.json(rows);
-  });
-  
+
+ 
+  console.log(error);
+  return res.status(500).json({ error: "Intente más tarde" });
+}
+res.json(rows);
+});
+
 };
 export const un_producto = (req, res) => {
   const { id } = req.params;
