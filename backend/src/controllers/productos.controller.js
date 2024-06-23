@@ -7,7 +7,7 @@ export const todos_productos = (req, res) => {
       if (error) {
         console.log(error);
         return res.status(500).json({
-          error: "Intente más tarde"
+          error: "Intente más tarde!"
         });
       }
       res.json(rows);

@@ -12,7 +12,7 @@ db.connect((error) => {
     console.log(error);
     return;
   }
-  console.log("Conectados");
+  console.log("Conectados!");
 });
 
 export default db; /* asi se exporta */

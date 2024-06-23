@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.json({
-        index: 'Ejemplo. Estas en el Inicio!!!'
+        index: 'Ejemplo. Estas en el Inicio!!'
     })
 })
 
