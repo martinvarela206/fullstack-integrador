@@ -33,10 +33,11 @@ db.connect((error) => {
   console.log("Conectados");
 });
 
-//module.exports = db;
+
+//export default db;
+// module.exports = {
+//   mysql,
+//   db,
+module.exports = db;
 //module.exports=exportdefault.connection
-//export default connection;
-module.exports = {
-  mysql,
-  db
-}
+// }
