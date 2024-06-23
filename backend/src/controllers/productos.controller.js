@@ -9,11 +9,11 @@
 //     res.json({
 //         id: `Producto id: ${id}`
 //     })
-// }
-//const db = require("../db/db");
+// } 
+//const db  = require("../db/db");
 //import  connection from "../db/db";
-import db from "../../db/db.js";
-
+//import  connection from "../db/db";
+import  db from "../db/db";
 const fs = require("fs");
 const path = require("path");
 export const todos_productos = (req, res) => {
