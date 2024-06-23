@@ -1,8 +1,8 @@
-drop if exists Categorias;
-drop if exists Productos;
-drop if exists Ingredientes;
-drop if exists Ofertas;
-drop if exists Productos_Ingredientes;
+DROP TABLE IF EXISTS Productos_Ingredientes;
+DROP TABLE IF EXISTS Ofertas;
+DROP TABLE IF EXISTS Productos;
+DROP TABLE IF EXISTS Ingredientes;
+DROP TABLE IF EXISTS Categorias;
 
 CREATE TABLE Categorias (
     categoria_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -16,7 +16,7 @@ CREATE TABLE Productos (
     precio DECIMAL(10, 2) NOT NULL,
     categoria_id INT,
     imagen_url VARCHAR(255),
-    FOREIGN KEY (categoria_id) REFERENCES Categorias(id)
+    FOREIGN KEY (categoria_id) REFERENCES Categorias(categoria_id)
 );
 
 CREATE TABLE Ingredientes (
