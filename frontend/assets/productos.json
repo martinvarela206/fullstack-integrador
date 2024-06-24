@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Chocotorta",
+    "descripcion": "Chocotorta artesanal de dulce de leche repostero.",
+    "precio": "15000",
+    "categoria": "2",
+    "imagen_url": "./img/chocotorta.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Selva Negra",
+    "descripcion": "Deliciosa torta Selva Negra con capas de chocolate y crema chantilly.",
+    "precio": "20000",
+    "categoria": "2",
+    "imagen_url": "./img/selva_negra.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Torta Oreo",
+    "descripcion": "Torta de galletas Oreo con relleno cremoso de vainilla y chocolate.",
+    "precio": "18000",
+    "categoria": "2",
+    "imagen_url": "./img/torta_oreo.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Perdición de Chocolate",
+    "descripcion": "Exquisito postre de múltiples capas de chocolate belga.",
+    "precio": "22000",
+    "categoria": "3",
+    "imagen_url": "./img/perdicion_chocolate.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Selva Frutal",
+    "descripcion": "Torta Selva Frutal con capas de frutas frescas y crema pastelera.",
+    "precio": "19000",
+    "categoria": "2",
+    "imagen_url": "./img/selva_frutal.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Cheese Cake",
+    "descripcion": "Clásico cheese cake con base de galletas y cobertura de frutos rojos.",
+    "precio": "17000",
+    "categoria": "3",
+    "imagen_url": "./img/cheese_cake.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Perdición de Cereza",
+    "descripcion": "Postre de crema y cerezas frescas con base crujiente.",
+    "precio": "21000",
+    "categoria": "3",
+    "imagen_url": "./img/perdicion_cereza.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Piramide Deliciosa",
+    "descripcion": "Impresionante pirámide de chocolate y capas de bizcocho.",
+    "precio": "25000",
+    "categoria": "3",
+    "imagen_url": "./img/piramide_deliciosa.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Budín Inglés",
+    "descripcion": "Clásico budín inglés con frutas confitadas y un toque de brandy.",
+    "precio": "14000",
+    "categoria": "4",
+    "imagen_url": "./img/budin_ingles.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Pastelitos Individuales",
+    "descripcion": "Pequeños pastelitos surtidos con diferentes sabores y decoraciones.",
+    "precio": "10000",
+    "categoria": "1",
+    "imagen_url": "./img/pastelitos_individuales.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Waffles",
+    "descripcion": "Waffles recién hechos con opción de toppings variados.",
+    "precio": "12000",
+    "categoria": "3",
+    "imagen_url": "./img/waffles.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Mini Rogel",
+    "descripcion": "Mini Rogel con finas capas de masa y dulce de leche.",
+    "precio": "13000",
+    "categoria": "3",
+    "imagen_url": "./img/mini_rogel.jpg"
+  }
+]
