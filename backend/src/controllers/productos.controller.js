@@ -1,5 +1,6 @@
 import db from "../db/db.js" /* LOS MODULOS PROPIOS LLEVAN LA EXTESION .js */
 
+// GET:/productos
 export const todos_productos = (req, res) => {
   const sql = "SELECT * FROM productos";
   try {
@@ -21,6 +22,7 @@ export const todos_productos = (req, res) => {
   }
 };
 
+// GET:/productos/:id
 export const un_producto = (req, res) => {
   const {
     id
@@ -50,17 +52,20 @@ export const un_producto = (req, res) => {
   }
 };
 
+// POST:/productos
 export const store = (req, res) => {
   const {
+    nombre,
     descripcion,
-    precio_de_venta_por_kg,
-    stock
+    precio,
+    categoria_id,
+    imagen_url
   } = req.body;
   const sql =
-    "INSERT INTO productos (descripcion, precio_de_venta_por_kg, stock) VALUES (?,?,?)";
+    "INSERT INTO productos (nombre, descripcion, precio, categoria_id, imagen_url) VALUES (?,?,?,?,?)";
 
   try {
-    db.query(sql, [descripcion, precio_de_venta_por_kg, stock], (error, result) => {
+    db.query(sql, [nombre, descripcion, precio, categoria_id, imagen_url], (error, result) => {
       if (error) {
         console.log(error);
         return res.status(500).json({
@@ -78,19 +83,22 @@ export const store = (req, res) => {
   }
 };
 
+// PUT:/productos/:id
 export const update = (req, res) => {
   const {
     id
   } = req.params;
   const {
+    nombre,
     descripcion,
-    precio_de_venta_por_kg,
-    stock
+    precio,
+    categoria_id,
+    imagen_url
   } = req.body;
 
   const sql =
-    "UPDATE productos SET descripcion = ?, precio_de_venta_por_kg = ?, stock = ? WHERE id = ?";
-  const values = [descripcion, precio_de_venta_por_kg, stock, id];
+    "UPDATE productos SET nombre = ?, descripcion = ?, precio = ?, categoria_id = ?, imagen_url = ? WHERE id = ?";
+  const values = [nombre, descripcion, precio, categoria_id, imagen_url, id];
 
   try {
     db.query(sql, values, (error, rows) => {
@@ -113,6 +121,7 @@ export const update = (req, res) => {
   }
 };
 
+// DELETE:/productos/:id
 export const destroy = (req, res) => {
   const {
     id
