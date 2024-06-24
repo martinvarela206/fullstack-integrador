@@ -9,7 +9,9 @@ import {
     store,
     todos_productos,
     un_producto,
-    update
+    update, 
+    productos_en_oferta
+
 } from "../controllers/productos.controller.js";
 
 
@@ -18,6 +20,7 @@ routerProductos.get('/:id', un_producto)
 routerProductos.post('/', store)
 routerProductos.put('/:id', update)
 routerProductos.delete('/:id', destroy)
+routerProductos.get('/ofertas/', productos_en_oferta)
 
 
 export default routerProductos
