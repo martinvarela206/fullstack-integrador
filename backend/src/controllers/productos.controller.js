@@ -22,6 +22,28 @@ export const todos_productos = (req, res) => {
   }
 };
 
+// GET:/productos/oferta
+export const productos_en_oferta = (req, res) => {
+  const sql = "SELECT productos.nombre, ofertas.descuento, ofertas.fecha_inicio, ofertas.fecha_fin FROM productos NATURAL JOIN ofertas;";
+  try {
+    db.query(sql, (error, rows) => {
+      if (error) {
+        console.log(error);
+        return res.status(500).json({
+          error: "Intente más tarde!"
+        });
+      }
+      res.json(rows);
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({
+      error: "Intente más tarde"
+    });
+  }
+};
+
 // GET:/productos/:id
 export const un_producto = (req, res) => {
   const {
@@ -39,7 +61,7 @@ export const un_producto = (req, res) => {
       }
       if (rows.length === 0) {
         return res.status(404).json({
-          message: "No existe el producto"
+          message: "No existe el producto "+id
         });
       }
       res.json(rows[0]);
@@ -158,24 +180,3 @@ export const destroy = (req, res) => {
 
 
 
-// GET:/productos/oferta
-export const productos_en_oferta = (req, res) => {
-  const sql = "SELECT productos.nombre, ofertas.descuento, ofertas.fecha_inicio, ofertas.fecha_fin FROM productos NATURAL RIGHT JOIN ofertas;";
-  try {
-    db.query(sql, (error, rows) => {
-      if (error) {
-        console.log(error);
-        return res.status(500).json({
-          error: "Intente más tarde!"
-        });
-      }
-      res.json(rows);
-    });
-
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({
-      error: "Intente más tarde"
-    });
-  }
-};

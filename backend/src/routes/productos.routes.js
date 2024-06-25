@@ -16,11 +16,11 @@ import {
 
 
 routerProductos.get('/', todos_productos)
+routerProductos.get('/ofertas', productos_en_oferta)
 routerProductos.get('/:id', un_producto)
 routerProductos.post('/', store)
 routerProductos.put('/:id', update)
 routerProductos.delete('/:id', destroy)
-routerProductos.get('/ofertas/', productos_en_oferta)
 
 
 export default routerProductos
