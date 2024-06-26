@@ -22,7 +22,7 @@ export const todos_productos = (req, res) => {
   }
 };
 
-// GET:/productos/oferta
+// GET:/productos/ofertas
 export const productos_en_oferta = (req, res) => {
   const sql = "SELECT productos.nombre, ofertas.descuento, ofertas.fecha_inicio, ofertas.fecha_fin FROM productos NATURAL JOIN ofertas;";
   try {
