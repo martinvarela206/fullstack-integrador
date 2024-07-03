@@ -19,8 +19,9 @@ const productosEnOferta = async () => {
 
     const ofertas = document.getElementById("ofertas");
     productosFiltrados.forEach((producto) => {
-      const nuevo2DIV = document.createElement("div");
-      nuevo2DIV.className = "my-card";
+      
+        const nuevo2DIV = document.createElement("div");
+        nuevo2DIV.className = "my-card";
       nuevo2DIV.innerHTML = `
                <img class="imgProductos img-thumbnail" src="${producto.imagen_url}" alt="${producto.nombre}" >
                      <div class="my-card-body">  <h3>
