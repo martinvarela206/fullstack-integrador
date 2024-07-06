@@ -1,6 +1,7 @@
 const productosEnOferta = async () => {
   try {
     const response = await fetch("https://mvarela.alwaysdata.net/productos/ofertas");
+    //const response = await fetch("https://localhost:3000/productos/ofertas");
     const productos = await response.json();
 
     if (
