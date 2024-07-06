@@ -1,6 +1,6 @@
 const productosEnOferta = async () => {
   try {
-    const response = await fetch("https://mvarela.alwaysdata.net/productos");
+    const response = await fetch("https://mvarela.alwaysdata.net/productos/ofertas");
     const productos = await response.json();
 
     if (
@@ -12,13 +12,14 @@ const productosEnOferta = async () => {
       return;
     }
 
-    const idEspecificas = [1, 3, 7, 12]; // IDs específicas que quieres traer
-    const productosFiltrados = productos.filter((producto) =>
-      idEspecificas.includes(producto.id)
-    );
+    // // const idEspecificas = [1, 3, 7, 12]; // IDs específicas que quieres traer
+    // // const productosFiltrados = productos.filter((producto) =>
+    // //   idEspecificas.includes(producto.id)
+    // );
 
     const ofertas = document.getElementsByClassName("best-products")[0];
-    productosFiltrados.forEach((producto) => {
+    // productosFiltrados.forEach((producto) => {
+    productos.forEach((producto) => {
       const nuevo2DIV = document.createElement("div");
       nuevo2DIV.className = "my-card";
       nuevo2DIV.innerHTML = `

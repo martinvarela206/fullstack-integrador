@@ -24,7 +24,7 @@ export const todos_productos = (req, res) => {
 
 // GET:/productos/ofertas
 export const productos_en_oferta = (req, res) => {
-  const sql = "SELECT producto_id, productos.nombre, ofertas.descuento, productos.precio, ofertas.fecha_inicio, ofertas.fecha_fin FROM productos INNER JOIN ofertas ON productos.id = ofertas.producto_id;";
+  const sql = "SELECT producto_id, productos.nombre, ofertas.descuento, productos.precio, productos.imagen_url ,ofertas.fecha_inicio, ofertas.fecha_fin FROM productos INNER JOIN ofertas ON productos.id = ofertas.producto_id;";
    // "SELECT productos.nombre, ofertas.descuento, productos.precio, ofertas.fecha_inicio, ofertas.fecha_fin FROM productos NATURAL JOIN ofertas;";
   try {
     db.query(sql, (error, rows) => {
