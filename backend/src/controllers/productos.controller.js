@@ -103,6 +103,12 @@ export const update = (req, res) => {
       });
     }
 
+    if(rows.affectedRows === 0){
+      return res
+        .status(404)
+        .json({message: "Producto no encontrado, no se actualizó ningun producto."});
+    }
+
     return res.status(200).json({
       message: "Producto actualizado correctamente"
     });
