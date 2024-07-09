@@ -1,4 +1,5 @@
 /* 
+    El backend en Alwaysdata esta en la url: https://mvarela.alwaysdata.net/productos
     AL INCLUIR EN package.json 
     "type" : "module", 
     SE PUEDE USAR LA SINTAXIS 
